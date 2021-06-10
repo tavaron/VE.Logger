@@ -16,9 +16,9 @@ func ParseMessage(msg string) (Message, error) {
 	var response Message = nil
 	var err error = nil
 	if strings.Contains(msg, "BMV") {
-		response, err = ReadShunt(msg)
+		response, err = readShunt(msg)
 	} else if !strings.Contains(msg, "PID") {
-		response, err = ReadHistory(msg)
+		response, err = readHistory(msg)
 	}
 	return response, err
 }

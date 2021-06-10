@@ -22,7 +22,7 @@ type shunt struct {
 	Alarm            string    `name:"AlarmReason"`      // empty if none, else reason
 }
 
-func ReadShunt(message string) (*shunt, error) {
+func readShunt(message string) (*shunt, error) {
 	response := new(shunt)
 	response.Time = time.Now()
 	lines := strings.Split(message, "\n")

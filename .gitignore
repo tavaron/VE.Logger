@@ -1,0 +1,3 @@
+/.idea/
+	opts.ConnectTimeout = timeout
+	opts.WriteTimeout = timeout

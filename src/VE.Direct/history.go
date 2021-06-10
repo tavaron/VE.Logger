@@ -21,7 +21,7 @@ type history struct {
 	MainVoltageHighAlarmCount int `name:"MainVoltageHighAlarmCount"`
 }
 
-func ReadHistory(message string) (*history, error) {
+func readHistory(message string) (*history, error) {
 	response := new(history)
 	lines := strings.Split(message, "\n")
 
